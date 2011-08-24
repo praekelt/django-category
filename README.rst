@@ -38,7 +38,7 @@ Category model to be used for categorization of content. Categories are high lev
 
 Category.title
 ++++++++++++++
-Short descriptive title for the category, to be used for display.
+Short descriptive title for the category to be used for display.
     
 Category.slug
 +++++++++++++
@@ -50,7 +50,7 @@ Tag model to be used for tagging content. Tags are to be used to describe your c
 
 Tag.title
 +++++++++
-Short descriptive name for the tag, to be used for display.
+Short descriptive name for the tag to be used for display.
     
 Tag.slug
 ++++++++
