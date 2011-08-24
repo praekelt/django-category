@@ -1,6 +1,12 @@
 from django.db import models
 
+
 class Category(models.Model):
+    """
+    Category model to be used for categorization of content. Categories are
+    high level constructs to be used for grouping and organizing content,
+    thus creating a site's table of contents.
+    """
     title = models.CharField(
         max_length=200,
         help_text='Short descriptive name for this category.',
@@ -20,7 +26,14 @@ class Category(models.Model):
         verbose_name = 'category'
         verbose_name_plural = 'categories'
 
+
 class Tag(models.Model):
+    """
+    Tag model to be used for tagging content. Tags are to be used to describe
+    your content in more detail, in essence providing keywords associated with
+    your content. Tags can also be seen as micro-categorization of a site's
+    content.
+    """
     title = models.CharField(
         max_length=200,
         help_text='Short descriptive name for this tag.',
