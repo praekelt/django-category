@@ -3,5 +3,5 @@ import unittest
 
 class TestCase(unittest.TestCase):
     def test_something(self):
-        return
+        return 
         raise NotImplementedError('Test not implemented. Bad developer!')

@@ -26,6 +26,7 @@ setup(
     cmdclass={"test": TestRunner},
     tests_require=[
         'django',
+        'coverage',
     ],
     classifiers=[
         "Programming Language :: Python",
