@@ -27,6 +27,7 @@ setup(
     tests_require=[
         'django',
         'coverage',
+        'pep8',
     ],
     classifiers=[
         "Programming Language :: Python",
