@@ -1,15 +1,10 @@
 from setuptools import setup, find_packages
 from setuptools.command.test import test
 
-
-class TestRunner(test):
-    def run(self, *args, **kwargs):
-        if self.distribution.install_requires:
-            self.distribution.fetch_build_eggs(self.distribution.install_requires)
-        if self.distribution.tests_require:
-            self.distribution.fetch_build_eggs(self.distribution.tests_require)
-        from runtests import runtests
-        runtests()
+def run_tests(self):
+    from setuptest.runtests import runtests
+    return runtests(self)
+test.run_tests = run_tests
 
 setup(
     name='django-category',
@@ -23,11 +18,8 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     test_suite="category.tests",
-    cmdclass={"test": TestRunner},
     tests_require=[
-        'django',
-        'coverage',
-        'pep8',
+        'django-setuptest',
     ],
     classifiers=[
         "Programming Language :: Python",
@@ -40,3 +32,4 @@ setup(
     ],
     zip_safe=False,
 )
+
