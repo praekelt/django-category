@@ -13,7 +13,7 @@ setup(
     include_package_data=True,
     test_suite="category.test_suite",
     tests_require=[
-        'django-setuptest',
+        'django-setuptest>=0.0.4',
     ],
     classifiers=[
         "Programming Language :: Python",
