@@ -12,6 +12,9 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     test_suite="setuptest.SetupTestSuite",
+    install_requires = [
+        'south',
+    ],
     tests_require=[
         'django-setuptest>=0.0.6',
     ],

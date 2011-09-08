@@ -17,6 +17,7 @@ class Category(models.Model):
         unique=True,
         help_text='Short descriptive unique name for use in urls.',
     )
+    parent = models.ForeignKey('self', null=True, blank=True)
 
     def __unicode__(self):
         return self.title
@@ -26,6 +27,15 @@ class Category(models.Model):
         verbose_name = 'category'
         verbose_name_plural = 'categories'
 
+    def save(self, *args, **kwargs):
+        # Raise on circular reference
+        parent = self.parent
+        while parent is not None:
+            if parent == self:
+                raise RuntimeError, "Circular references not allowed"
+            parent = parent.parent
+
+        super(Category, self).save(*args, **kwargs)
 
 class Tag(models.Model):
     """
