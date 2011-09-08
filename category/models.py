@@ -37,6 +37,14 @@ class Category(models.Model):
 
         super(Category, self).save(*args, **kwargs)
 
+    @property
+    def children(self):
+        return self.category_set.all().order_by('title')
+
+    @property
+    def tags(self):
+        return Tag.objects.filter(categories__in=[self]).order_by('title')
+
 class Tag(models.Model):
     """
     Tag model to be used for tagging content. Tags are to be used to describe

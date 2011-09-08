@@ -4,6 +4,9 @@ Changelog
 0.0.5
 -----
 #. Use prepopulate_fields for admin interface
+#. Parent category field added
+#. South migration path created
+#. Tree view of categories and tags
 
 0.0.4 (2011-08-24)
 ------------------

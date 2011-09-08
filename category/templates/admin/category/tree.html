@@ -1,0 +1,13 @@
+{% extends "admin/base_site.html" %}
+
+{% block title %}Category Tree{% endblock %}
+
+{% block content %}
+<div id="content-main">
+  <h1>Category Tree</h1>
+    {% for category in categories %}
+        {% include "admin/category/tree_node.html" %}
+        <br />
+    {% endfor %}
+</div>
+{% endblock %}
