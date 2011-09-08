@@ -43,7 +43,11 @@ Short descriptive title for the category to be used for display.
 Category.slug
 +++++++++++++
 Short descriptive unique name to be used in urls.
-    
+
+Category.parent
++++++++++++++
+Optional parent to allow nesting of categories.
+
 class Tag
 ~~~~~~~~~
 Tag model to be used for tagging content. Tags are to be used to describe your content in more detail, in essence providing keywords associated with your content. Tags can also be seen as micro-categorization of a site's content.
@@ -59,4 +63,3 @@ Short descriptive unique name to be used in urls.
 Tag.categories
 ++++++++++++++
 Categories to which the tag belongs.
-

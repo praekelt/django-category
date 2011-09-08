@@ -1,0 +1,10 @@
+{% extends "admin/app_index.html" %}
+
+{% block content %}
+    {% block object-tools %}
+        <ul class="object-tools">
+            <li><a href="/admin/category/tree">Tree</a></li>
+        </ul>
+    {% endblock %}
+    {{ block.super }}
+{% endblock %}
