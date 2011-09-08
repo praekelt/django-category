@@ -45,7 +45,7 @@ Category.slug
 Short descriptive unique name to be used in urls.
 
 Category.parent
-+++++++++++++
++++++++++++++++
 Optional parent to allow nesting of categories.
 
 class Tag
