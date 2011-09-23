@@ -1,3 +1,4 @@
+from django.core.urlresolvers import reverse
 from django.db import models
 
 
@@ -44,6 +45,9 @@ class Category(models.Model):
     @property
     def tags(self):
         return Tag.objects.filter(categories__in=[self]).order_by('title')
+
+    def get_absolute_url(self):
+        return reverse('category_object_list', kwargs={'category_slug': self.slug})
 
 class Tag(models.Model):
     """
