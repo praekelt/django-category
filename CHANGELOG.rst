@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.0.6
+-----
+#. Added get_absolute_url on Category
+
 0.0.5
 -----
 #. Use prepopulate_fields for admin interface
