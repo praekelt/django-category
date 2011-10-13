@@ -13,6 +13,7 @@ setup(
     include_package_data=True,
     test_suite="setuptest.SetupTestSuite",
     install_requires = [
+        'Django',
         'south',
     ],
     tests_require=[
