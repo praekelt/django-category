@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.1
+---
+#. Dependency cleanup.
+
 0.0.6
 -----
 #. Added get_absolute_url on Category
