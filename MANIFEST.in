@@ -2,3 +2,6 @@ include AUTHORS.rst
 include CHANGELOG.rst
 include LICENSE
 include README.rst
+recursive-include category/migrations *
+recursive-include category/templates *
+recursive-include category/tests *
