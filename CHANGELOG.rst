@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.1.1
+-----
+#. Added sites and subtitle fields.
+
 0.1
 ---
 #. Dependency cleanup.
