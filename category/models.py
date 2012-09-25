@@ -35,7 +35,7 @@ class Category(models.Model):
     )
 
     def __unicode__(self):
-        return self.title
+        return self.subtitle if self.subtitle else self.title
 
     class Meta:
         ordering = ('title',)
