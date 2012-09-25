@@ -12,6 +12,14 @@ class Category(models.Model):
         max_length=200,
         help_text='Short descriptive name for this category.',
     )
+    subtitle = models.CharField(
+        max_length=200,
+        blank=True,
+        null=True,
+        default='',
+        help_text='Some titles may be the same and cause confusion in admin '
+                  'UI. A subtitle makes a distinction.',
+    )
     slug = models.SlugField(
         max_length=255,
         db_index=True,
@@ -19,6 +27,12 @@ class Category(models.Model):
         help_text='Short descriptive unique name for use in urls.',
     )
     parent = models.ForeignKey('self', null=True, blank=True)
+    sites = models.ManyToManyField(
+        'sites.Site',
+        blank=True,
+        null=True,
+        help_text='Limits category scope to selected sites.',
+    )
 
     def __unicode__(self):
         return self.title
@@ -48,6 +62,7 @@ class Category(models.Model):
 
     def get_absolute_url(self):
         return reverse('category_object_list', kwargs={'category_slug': self.slug})
+
 
 class Tag(models.Model):
     """
