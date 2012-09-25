@@ -39,6 +39,11 @@ Category model to be used for categorization of content. Categories are high lev
 Category.title
 ++++++++++++++
 Short descriptive title for the category to be used for display.
+
+
+Category.subtitle
++++++++++++++++++
+Some titles may be the same and cause confusion in admin UI. A subtitle makes a distinction.
     
 Category.slug
 +++++++++++++
@@ -47,6 +52,10 @@ Short descriptive unique name to be used in urls.
 Category.parent
 +++++++++++++++
 Optional parent to allow nesting of categories.
+
+Category.sites
+++++++++++++++
+Limits category scope to selected sites.
 
 class Tag
 ~~~~~~~~~
