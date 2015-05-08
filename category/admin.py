@@ -1,5 +1,6 @@
-from category.models import Category, Tag
 from django.contrib import admin
+
+from category.models import Category, Tag
 
 
 class CategoryAdmin(admin.ModelAdmin):

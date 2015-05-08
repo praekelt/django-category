@@ -1,10 +1,11 @@
 {% extends "admin/base_site.html" %}
+{% load i18n %}
 
-{% block title %}Category Tree{% endblock %}
+{% block title %}{% trans "Category Tree" %}{% endblock %}
 
 {% block content %}
 <div id="content-main">
-  <h1>Category Tree</h1>
+    <h1>{% trans "Category Tree" %}</h1>
     {% for category in categories %}
         {% include "admin/category/tree_node.html" %}
         <br />

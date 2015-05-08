@@ -1,6 +1,10 @@
 Changelog
 =========
 
+next
+----
+#. Fix tree view.
+
 0.1.1
 -----
 #. Added sites and subtitle fields.

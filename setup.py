@@ -11,13 +11,14 @@ setup(
     url='http://github.com/praekelt/django-category',
     packages=find_packages(),
     include_package_data=True,
-    test_suite="setuptest.SetupTestSuite",
+    test_suite="setuptest.setuptest.SetupTestSuite",
     install_requires = [
         'Django',
         'south',
+        'django-object-tools',
     ],
     tests_require=[
-        'django-setuptest>=0.0.6',
+        'django-setuptest>=0.1.6',
     ],
     classifiers=[
         "Programming Language :: Python",
