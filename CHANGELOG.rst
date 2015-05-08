@@ -1,8 +1,8 @@
 Changelog
 =========
 
-next
-----
+0.1.2
+-----
 #. Fix tree view.
 
 0.1.1
