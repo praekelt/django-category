@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-category',
-    version='0.1.1',
+    version='0.1.2',
     description='Django categorize content app.',
     long_description = open('README.rst', 'r').read() + open('AUTHORS.rst', 'r').read() + open('CHANGELOG.rst', 'r').read(),
     author='Praekelt Foundation',
@@ -11,13 +11,14 @@ setup(
     url='http://github.com/praekelt/django-category',
     packages=find_packages(),
     include_package_data=True,
-    test_suite="setuptest.SetupTestSuite",
+    test_suite="setuptest.setuptest.SetupTestSuite",
     install_requires = [
         'Django',
         'south',
+        'django-object-tools',
     ],
     tests_require=[
-        'django-setuptest>=0.0.6',
+        'django-setuptest>=0.1.6',
     ],
     classifiers=[
         "Programming Language :: Python",

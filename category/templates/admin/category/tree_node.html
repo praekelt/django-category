@@ -1,6 +1,6 @@
 <div style="margin-left: 20px;">
 {{ category }}
-{% if category.tags.count %}
+{% if category.tags.exists %}
     <small>
     (
     {% for tag in category.tags %}
@@ -12,6 +12,8 @@
 {% endif %}
 
 {% for category in category.children %}
-    {% include "admin/category/tree_node.html" %}
+    {% with template_name="admin/category/tree_node.html" %}
+        {% include template_name %}
+    {% endwith %}
 {% endfor %}
 </div>
