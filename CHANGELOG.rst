@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.1.3
+-----
+#. __unicode__ method now returns a sensible result.
+
 0.1.2
 -----
 #. Fix tree view.
