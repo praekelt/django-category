@@ -14,7 +14,7 @@ setup(
     install_requires = [
         "django",
         "django-object-tools>=1.9",
-        "South>=1.0.2",
+        "South>=1.0.2"
     ],
     classifiers=[
         "Programming Language :: Python",
