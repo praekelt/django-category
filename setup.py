@@ -19,7 +19,7 @@ setup(
     classifiers=[
         "Programming Language :: Python",
         "License :: OSI Approved :: BSD License",
-        "Development Status :: 4 - Stable",
+        "Development Status :: 5 - Production/Stable",
         "Operating System :: OS Independent",
         "Framework :: Django",
         "Intended Audience :: Developers",
