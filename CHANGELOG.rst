@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.9
+---
+#. Actual unit tests.
+#. Compatibility from Django 1.6 to 1.9.
+
 0.1.3
 -----
 #. __unicode__ method now returns a sensible result.

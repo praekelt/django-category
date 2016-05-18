@@ -1,0 +1,4 @@
+psycopg2==2.6.1
+Django==1.9.6
+pytz==2016.4
+django-object-tools==1.9
