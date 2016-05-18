@@ -1,9 +1,10 @@
 Changelog
 =========
 
-next
-----
+1.9
+---
 #. Actual unit tests.
+#. Compatibility from Django 1.6 to 1.9.
 
 0.1.3
 -----
