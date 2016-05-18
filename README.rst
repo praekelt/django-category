@@ -2,12 +2,12 @@ Django Category
 ===============
 **Simple category app providing category and tag models.**
 
+.. contents:: Contents
+    :depth: 5
+
 .. figure:: https://travis-ci.org/praekelt/django-category.svg?branch=develop
    :align: center
    :alt: Travis
-
-.. contents:: Contents
-    :depth: 5
 
 Installation
 ------------
