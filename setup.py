@@ -14,12 +14,12 @@ setup(
     install_requires = [
         "django",
         "django-object-tools>=1.9",
-        "South>=1.0.2",
+        "South>=1.0.2"
     ],
     classifiers=[
         "Programming Language :: Python",
         "License :: OSI Approved :: BSD License",
-        "Development Status :: 4 - Stable",
+        "Development Status :: 5 - Production/Stable",
         "Operating System :: OS Independent",
         "Framework :: Django",
         "Intended Audience :: Developers",
