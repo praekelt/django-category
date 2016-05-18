@@ -7,7 +7,7 @@ import object_tools
 from category.models import Category
 
 
-class Delete(object_tools.ObjectTool):
+class Tree(object_tools.ObjectTool):
     name = "tree"
     label = _("Tree")
 
@@ -21,4 +21,4 @@ class Delete(object_tools.ObjectTool):
         )
 
 
-object_tools.tools.register(Delete, Category)
+object_tools.tools.register(Tree, Category)
