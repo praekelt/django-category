@@ -2,6 +2,10 @@ Django Category
 ===============
 **Simple category app providing category and tag models.**
 
+.. figure:: https://travis-ci.org/praekelt/django-category.svg?branch=develop
+   :align: center
+   :alt: Travis
+
 .. contents:: Contents
     :depth: 5
 
@@ -11,6 +15,11 @@ Installation
 #. Install or add ``django-category`` to your Python path.
 
 #. Add ``category`` to your ``INSTALLED_APPS`` setting.
+
+#. If you are on Django < 1.7 then add ``south`` to your ``INSTALLED_APPS`` setting.
+
+#. Optional: ``django-object-tools`` provides a category tree view. See https://github.com/praekelt/django-object-tools
+   for installation instructions.
 
 Usage
 -----
@@ -44,7 +53,7 @@ Short descriptive title for the category to be used for display.
 Category.subtitle
 +++++++++++++++++
 Some titles may be the same and cause confusion in admin UI. A subtitle makes a distinction.
-    
+
 Category.slug
 +++++++++++++
 Short descriptive unique name to be used in urls.
@@ -64,7 +73,7 @@ Tag model to be used for tagging content. Tags are to be used to describe your c
 Tag.title
 +++++++++
 Short descriptive name for the tag to be used for display.
-    
+
 Tag.slug
 ++++++++
 Short descriptive unique name to be used in urls.
