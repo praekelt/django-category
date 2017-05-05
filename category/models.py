@@ -50,7 +50,7 @@ class Category(models.Model):
         parent = self.parent
         while parent is not None:
             if parent == self:
-                raise RuntimeError, "Circular references not allowed"
+                raise RuntimeError("Circular references not allowed")
             parent = parent.parent
 
         super(Category, self).save(*args, **kwargs)
