@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.11.0
+------
+#. Compatibility for Python 3.5 and Django 1.11.
+
 1.9
 ---
 #. Actual unit tests.
