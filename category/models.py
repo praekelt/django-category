@@ -1,5 +1,5 @@
-from django.core.urlresolvers import reverse
 from django.db import models
+from django.urls import reverse
 
 
 class Category(models.Model):
@@ -26,7 +26,9 @@ class Category(models.Model):
         unique=True,
         help_text="Short descriptive unique name for use in urls.",
     )
-    parent = models.ForeignKey("self", null=True, blank=True)
+    parent = models.ForeignKey(
+        "self", null=True, blank=True, on_delete=models.CASCADE
+    )
     sites = models.ManyToManyField(
         "sites.Site",
         blank=True,

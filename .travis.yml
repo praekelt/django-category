@@ -1,18 +1,15 @@
 language: python
 
-python:
-  - "2.7"
-  - "3.5"
-
-env:
-  - TOXENV=django16
-  - TOXENV=django19
-  - TOXENV=django111
+matrix:
+    include:
+        - python: 2.7
+          env: TOXENV=django110
+        - python: 2.7
+          env: TOXENV=django111
+        - python: 3.5
+          env: TOXENV=django20
 
 install:
   - pip install tox
 
-before_script:
-  - psql -U postgres -c "create database django encoding 'UTF8'"
-
-script: tox -e $TOXENV
+script: tox

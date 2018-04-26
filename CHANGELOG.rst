@@ -1,6 +1,10 @@
 Changelog
 =========
 
+next
+----
+#. Django 2 support. The minimum supported Django version is now 1.10.
+
 1.11.0
 ------
 #. Compatibility for Python 3.5 and Django 1.11.

@@ -2,7 +2,7 @@ USE_TZ = True
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'django',
         'USER': 'postgres',
         'PASSWORD': '',
@@ -17,11 +17,8 @@ INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sites',
-    'south',
 )
 
 SITE_ID = 1
 
 SECRET_KEY = 'SECRET_KEY'
-
-SOUTH_TESTS_MIGRATE = False

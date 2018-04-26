@@ -16,8 +16,6 @@ Installation
 
 #. Add ``category`` to your ``INSTALLED_APPS`` setting.
 
-#. If you are on Django < 1.7 then add ``south`` to your ``INSTALLED_APPS`` setting.
-
 #. Optional: ``django-object-tools`` provides a category tree view. See https://github.com/praekelt/django-object-tools
    for installation instructions.
 
