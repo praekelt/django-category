@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="django-category",
-    version="1.11.0",
+    version="2.0.0",
     description="Django categorize content app.",
     long_description = open("README.rst", "r").read() + open("AUTHORS.rst", "r").read() + open("CHANGELOG.rst", "r").read(),
     author="Praekelt Consulting",
@@ -12,9 +12,8 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires = [
-        "django",
+        "django>=1.10",
         "django-object-tools>=1.9",
-        "South>=1.0.2"
     ],
     classifiers=[
         "Programming Language :: Python",
