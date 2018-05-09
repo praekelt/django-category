@@ -1,6 +1,10 @@
 Changelog
 =========
 
+next
+----
+#. String representation for Python 3.
+
 2.0.0
 -----
 #. Django 2 support. The minimum supported Django version is now 1.10.

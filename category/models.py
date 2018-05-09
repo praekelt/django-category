@@ -42,6 +42,8 @@ class Category(models.Model):
         else:
             return self.title
 
+    __str__ = __unicode__
+
     class Meta:
         ordering = ("title",)
         verbose_name = "category"
@@ -95,6 +97,8 @@ class Tag(models.Model):
 
     def __unicode__(self):
         return self.title
+
+    __str__ = __unicode__
 
     class Meta:
         ordering = ("title",)
