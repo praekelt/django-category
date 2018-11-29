@@ -16,6 +16,10 @@ Installation
 
 #. Add ``category`` to your ``INSTALLED_APPS`` setting.
 
+#. This package uses django's internal sites framework. Add  ``django.contrib.sites`` to your ``INSTALLED_APPS``
+   setting and include the required ``SITE_ID = 1`` (or similiar). The official docs can be found here:
+   https://docs.djangoproject.com/en/2.1/ref/contrib/sites/.
+
 #. Optional: ``django-object-tools`` provides a category tree view. See https://github.com/praekelt/django-object-tools
    for installation instructions.
 
