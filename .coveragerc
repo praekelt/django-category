@@ -7,4 +7,4 @@ omit =
     *tests*
 
 [report]
-show_missing = Trueta
+show_missing = True
