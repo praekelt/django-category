@@ -2,12 +2,31 @@ Django Category
 ===============
 **Simple category app providing category and tag models.**
 
-.. figure:: https://travis-ci.org/praekelt/django-category.svg?branch=develop
-   :align: center
-   :alt: Travis
+.. image:: https://travis-ci.org/praekelt/django-category.svg
+    :target: https://travis-ci.org/praekelt/django-category
+    :align: center
+    :alt: Travis
+
+.. image:: https://coveralls.io/repos/github/praekelt/django-category/badge.svg?branch=develop
+    :target: https://coveralls.io/github/praekelt/django-category?branch=develop
+    :align: center
+    :alt: Coveralls
+
+.. image:: https://badge.fury.io/py/django-category.svg
+    :target: https://badge.fury.io/py/django-category
+    :align: center
+    :alt: Release
 
 .. contents:: Contents
     :depth: 5
+
+Requirements
+------------
+
+#. Python 2.7, 3.5-3.7
+
+#. Django 1.11, 2.0, 2.1
+
 
 Installation
 ------------
