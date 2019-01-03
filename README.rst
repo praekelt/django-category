@@ -4,17 +4,14 @@ Django Category
 
 .. image:: https://travis-ci.org/praekelt/django-category.svg
     :target: https://travis-ci.org/praekelt/django-category
-    :align: center
     :alt: Travis
 
 .. image:: https://coveralls.io/repos/github/praekelt/django-category/badge.svg?branch=develop
     :target: https://coveralls.io/github/praekelt/django-category?branch=develop
-    :align: center
     :alt: Coveralls
 
 .. image:: https://badge.fury.io/py/django-category.svg
     :target: https://badge.fury.io/py/django-category
-    :align: center
     :alt: Release
 
 .. contents:: Contents
