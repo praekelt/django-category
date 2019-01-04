@@ -2,12 +2,28 @@ Django Category
 ===============
 **Simple category app providing category and tag models.**
 
-.. figure:: https://travis-ci.org/praekelt/django-category.svg?branch=develop
-   :align: center
-   :alt: Travis
+.. image:: https://travis-ci.org/praekelt/django-category.svg
+    :target: https://travis-ci.org/praekelt/django-category
+    :alt: Travis
+
+.. image:: https://coveralls.io/repos/github/praekelt/django-category/badge.svg?branch=develop
+    :target: https://coveralls.io/github/praekelt/django-category?branch=develop
+    :alt: Coveralls
+
+.. image:: https://badge.fury.io/py/django-category.svg
+    :target: https://badge.fury.io/py/django-category
+    :alt: Release
 
 .. contents:: Contents
     :depth: 5
+
+Requirements
+------------
+
+#. Python 2.7, 3.5-3.7
+
+#. Django 1.11, 2.0, 2.1
+
 
 Installation
 ------------
@@ -15,6 +31,10 @@ Installation
 #. Install or add ``django-category`` to your Python path.
 
 #. Add ``category`` to your ``INSTALLED_APPS`` setting.
+
+#. This package uses django's internal sites framework. Add  ``django.contrib.sites`` to your ``INSTALLED_APPS``
+   setting and include the required ``SITE_ID = 1`` (or similiar). The official docs can be found here:
+   https://docs.djangoproject.com/en/2.1/ref/contrib/sites/.
 
 #. Optional: ``django-object-tools`` provides a category tree view. See https://github.com/praekelt/django-object-tools
    for installation instructions.

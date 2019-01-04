@@ -32,7 +32,6 @@ class Category(models.Model):
     sites = models.ManyToManyField(
         "sites.Site",
         blank=True,
-        null=True,
         help_text="Limits category scope to selected sites.",
     )
 
@@ -41,6 +40,8 @@ class Category(models.Model):
             return "%s - %s" % (self.title, self.subtitle)
         else:
             return self.title
+
+    __str__ = __unicode__
 
     class Meta:
         ordering = ("title",)
@@ -89,12 +90,13 @@ class Tag(models.Model):
     categories = models.ManyToManyField(
         "category.Category",
         blank=True,
-        null=True,
         help_text="Categories to which this tag belongs."
     )
 
     def __unicode__(self):
         return self.title
+
+    __str__ = __unicode__
 
     class Meta:
         ordering = ("title",)
