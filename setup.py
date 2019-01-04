@@ -13,6 +13,7 @@ setup(
     include_package_data=True,
     install_requires=[
         "django>=1.11",
+        "django-object-tools>=1.9",
     ],
     tests_require=[
         "tox"
