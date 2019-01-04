@@ -5,6 +5,11 @@ next
 ----
 #. String representation for Python 3.
 
+2.0.1
+-----
+#. Django 2.1 support. The minimum supported Django version is now 1.11.
+#. Added coveralls
+
 2.0.0
 -----
 #. Django 2 support. The minimum supported Django version is now 1.10.
